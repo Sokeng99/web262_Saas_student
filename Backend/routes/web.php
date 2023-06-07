@@ -68,6 +68,3 @@ Route::get('/page-register', function () {
 Route::get('/scholar-profile', function () {
     return view('scholar-profile');
 });
-Route::get('/hi', function () {
-    return view('hi');
-});
