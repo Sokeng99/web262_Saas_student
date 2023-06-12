@@ -19,13 +19,15 @@ Route::get('/', function () {
     return view('index'); //index.blade.php
 });
 
-Route::get('/feedback', function () {
-    return view('feedback'); //q&a.blade.php
-});
+// future plan
+// Route::get('/feedback', function () {
+//     return view('feedback'); //q&a.blade.php
+// });
 
-Route::get('/question', function () {
-    return view('question'); //question.blade.php
-});
+// future plan
+// Route::get('/question', function () {
+//     return view('question'); //question.blade.php
+// });
 
 Route::get('/welcome', function () {
     return view('welcome'); //welcome.blade.php

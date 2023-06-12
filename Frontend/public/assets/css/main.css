@@ -1173,7 +1173,7 @@ body {
 
 .feedback-button {
   position: absolute;
-  bottom: 70px;
+  bottom: 75px;
   right: 375px;
   background-color: #00032e;
   color: #fff;
@@ -1328,3 +1328,12 @@ body {
   text-align: right;
   display: block;
 } */
+
+/* upload */
+.upload .container{
+  align-self: center;
+  text-align: center;
+  background-color: snow;
+  width: 100%;
+  margin: 0 auto;
+}
