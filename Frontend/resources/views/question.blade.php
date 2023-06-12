@@ -1,4 +1,4 @@
-@extends('layout.master')
+{{-- @extends('layout.master')
 
 @section('dynamic_content')
 
@@ -82,4 +82,4 @@
 </div>
 </div>
 
-@stop
+@stop --}}

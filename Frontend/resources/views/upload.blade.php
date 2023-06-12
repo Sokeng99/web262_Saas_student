@@ -138,25 +138,69 @@
       
   </header><!-- End Header --> --}}
 
-  <nav>
+  <nav class="upload">
     <div class="nav-left">
-      
+      <img src="assets/img/logo1.png" class="logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
     </div>
-    <div class="nav-right"></div>
-  <!-- ======= Hero Section ======= -->
-  <div class="upload container">
-    <div class="mb-3">
-      <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+    <div class="nav-right">
+      <ul>
+        <li><i class="fa-solid fa-bell" style="color: #ffffff;"></i></li>
+        <li><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></li>
+        <li><i class="fa-solid fa-comment" style="color: #ffffff;"></i></li>
+      </ul>
+      <div class="nav-user-icon online">
+        <img src="assets/img/anime.png">
+      </div>
+    </div>
+  </nav>
+
+  {{-- content --}}
+  <div class="container">
+    {{-- main content --}}
+    <div class="main-content">
+      <div class="form-group">
+        <label for="title">Publication Title:</label>
+        <input type="text" id="title">
+    </div>
+    
+    <div class="upload-file" style="margin-bottom: 10px">
+      <label for="formFileMultiple" class="form-label">Upload your files here</label>
       <input class="form-control" type="file" id="formFileMultiple" multiple>
     </div>
+
+    <div class="form-group">
+        <label for="day">Publication Date (Day):</label>
+        <input type="number" id="day" min="1" max="31">
+    </div>
+    
+    <div class="form-group">
+        <label for="month">Publication Date (Month):</label>
+        <input type="text" id="month">
+    </div>
+    
+    <div class="form-group">
+        <label for="year">Publication Date (Year):</label>
+        <input type="number" id="year" min="1900" max="2099">
+    </div>
+    
+    <button onclick="publish()">Publish</button>
+
+    </div>
+    {{-- main content --}}
+
+    {{-- right-sidebar --}}
+    <div class="right-sidebar">
+
+
+
+    </div>
+    {{-- right-sidebar --}}
   </div>
+  {{-- content --}}
 
-
-  <main id="main">
-
-
-
-  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
