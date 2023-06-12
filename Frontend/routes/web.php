@@ -37,6 +37,8 @@ Route::get('/upload', function () {
     return view('upload'); //upload.blade.php
 });
 
+Route::post('/upload', [studentResearchController::class, 'upload']);
+
 Route::get('/template', function () {
     return view('template'); //template.blade.php
 });
@@ -64,34 +66,3 @@ Route::post('/postlogin', [CustomAuthController::class, 'login'])->name('postlog
 Route::get('/signup', [CustomAuthController::class, 'signup'])->name('register-user');
 Route::post('/postsignup', [CustomAuthController::class, 'signupsave'])->name('postsignup'); 
 Route::get('/signout', [CustomAuthController::class, 'signOut'])->name('signout');
-
-// // Page - Form save record
-// // URL: http://127.0.0.1:8000/member-list
-// Route::get('/member-list', [RegistermemberController::class,'memberlist']);
-
-// // FORM Register ****************************
-// // Page - Form Registering
-// // URL: http://127.0.0.1:8000/form-membership
-// Route::get('/form-membership', [RegistermemberController::class,'showform']);
-
-// // Page - Form save record
-// // URL: http://127.0.0.1:8000/save-member
-// Route::post('/save-member', [RegistermemberController::class,'saverecord']);
-// // end ****************************
-
-// // Page - Del
-// // URL: http://127.0.0.1:8000/member-del/99
-// Route::get('/member-del/{id}', [RegistermemberController::class,'memberdelete']);
-
-
-// // FORM Update ****************************
-// // page: show information
-// Route::get('/form-membership-edit/{id}', [RegistermemberController::class,'showformedit']);
-
-
-// // page: saved 
-// // page: show information
-// Route::post('/form-membership-update', [RegistermemberController::class,'showformupdate']);
-
-
-// // end ****************************

@@ -161,43 +161,43 @@
   <div class="container">
     {{-- main content --}}
     <div class="main-content">
-      <div class="form-group">
-        <label for="title">Publication Title:</label>
-        <input type="text" id="title">
-    </div>
-    
-    <div class="upload-file" style="margin-bottom: 10px">
-      <label for="formFileMultiple" class="form-label">Upload your files here</label>
-      <input class="form-control" type="file" id="formFileMultiple" multiple>
-    </div>
 
-    <div class="form-group">
-        <label for="day">Publication Date (Day):</label>
-        <input type="number" id="day" min="1" max="31">
-    </div>
-    
-    <div class="form-group">
-        <label for="month">Publication Date (Month):</label>
-        <input type="text" id="month">
-    </div>
-    
-    <div class="form-group">
-        <label for="year">Publication Date (Year):</label>
-        <input type="number" id="year" min="1900" max="2099">
-    </div>
-    
-    <button onclick="publish()">Publish</button>
+      <form method="post" enctype="multipart/form-data" action="{{url('/upload')}}">
+        <div class="form-group">
+          <label for="title">Publication Title:</label>
+          <input type="text" id="title">
+        </div>
+        
+        <div class="upload-file" style="margin-bottom: 10px">
+          <label for="formFileMultiple" class="form-label">Upload your files here</label>
+          <input class="form-control" type="file" name="image" placeholder="" aria-describedby="helpId">
+        </div>
 
+        <div class="form-group">
+          <label for="day">Publication Date (Day):</label>
+          <input type="number" id="day" min="1" max="31">
+        </div>
+      
+        <div class="form-group">
+            <label for="month">Publication Date (Month):</label>
+            <input type="text" id="month">
+        </div>
+      
+        <div class="form-group">
+            <label for="year">Publication Date (Year):</label>
+            <input type="number" id="year" min="1900" max="2099">
+        </div>
+      
+        <button class="btn btn-primary">Upload</button>
+      </form>
     </div>
-    {{-- main content --}}
 
     {{-- right-sidebar --}}
     <div class="right-sidebar">
 
-
-
     </div>
     {{-- right-sidebar --}}
+
   </div>
   {{-- content --}}
 

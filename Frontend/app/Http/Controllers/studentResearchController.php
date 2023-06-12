@@ -8,30 +8,18 @@ use Illuminate\Support\Facades\DB; // include DB Class
 
 class studentResearchController extends Controller
 {
-            // //fn show form
-        // public function showform(){
-        //     // call/render view in folder members\register.blade.php
+    public function index()
+    {
+        return view('index');
+    }
     
-    
-        //     //Query the table social network
-        //     $db_social = DB::select('select * from tbl_socialnet');
-    
-        //     //Query the table social network
-        //     $db_plan = DB::select('select * from tbl_mem_pan');
-    
-        //     return view("members.register",
-        //         [
-        //             "v_social" => $db_social,
-        //             "v_plan" => $db_plan
-    
-        //         ]
-    
-        //         );  
-    
-    
-    
-        // }
-    
+    public function upload(Request $request)
+    {
+        // echo "<pre>";
+        // print_r($request->all());
+        $fileName = time(). "-ws.". $request->file('image')->getClientOriginalExtension();
+        echo $request->file('image')->storeAs('public/uploads', $fileName);
+    }
         // //fn show form
         // public function saverecord(Request $req){
     
