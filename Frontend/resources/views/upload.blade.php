@@ -114,7 +114,7 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
+  {{-- <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
@@ -134,11 +134,15 @@
         </ul>
       </nav><!-- .navbar -->
       
-      </div>
+    </div>
       
-  </header><!-- End Header -->
-  <!-- End Header -->
+  </header><!-- End Header --> --}}
 
+  <nav>
+    <div class="nav-left">
+      
+    </div>
+    <div class="nav-right"></div>
   <!-- ======= Hero Section ======= -->
   <div class="upload container">
     <div class="mb-3">
