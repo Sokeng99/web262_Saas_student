@@ -1,81 +1,4 @@
-{{-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Upload Files</title>
 
-  <style>
-    body {
-      background: rgba(228, 228, 228, 0.9);
-    }
-    form {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-top: -100px;
-      margin-left: -250px;
-      width: 500px;
-      height: 200px;
-      border: 4px dashed #000000;
-    }
-    form p {
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      line-height: 170px;
-      color: black;
-      font-family: Arial;
-    }
-    form input {
-      position: absolute;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      outline: none;
-      opacity: 0;
-    }
-    form button {
-      margin: 0;
-      color: #fff;
-      background: #090135;
-      border: none;
-      width: 508px;
-      height: 35px;
-      margin-top: -20px;
-      margin-left: -4px;
-      border-radius: 4px;
-      border-bottom: 4px solid #090135;
-      transition: all .2s ease;
-      outline: none;
-    }
-    form button:hover {
-      background: #0e1279;
-      color: #e5e5e5;
-    }
-    form button:active {
-      border: 0;
-    }
-  </style>
-</head>
-<body>
-  <form action="upload.php" method="POST">
-    <input type="file" multiple>
-    <p>Drag your files here or click in this area.</p>
-    <button type="submit">Upload</button>
-  </form>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('form input').change(function () {
-        $('form p').text(this.files.length + " file(s) selected");
-      });
-    });
-  </script>
-</body>
-
-</html> --}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -114,36 +37,11 @@
 
 <body>
 
-  {{-- <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Share2YorGate</h1>
-      </a>
-      
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href=".html">Home</a></li>
-          <li><a href="signin.html">Log in</a></li>
-          <li><a href="signup.html">Join for free</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-      
-    </div>
-      
-  </header><!-- End Header --> --}}
-
-  <nav class="upload">
+  <nav class="nav-upload">
     <div class="nav-left">
       <img src="assets/img/logo1.png" class="logo">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-      </ul>
+      <a href="index">Home</a></li>
     </div>
     <div class="nav-right">
       <ul>
@@ -158,7 +56,7 @@
   </nav>
 
   {{-- content --}}
-  <div class="container">
+  <div class="container-upload">
     {{-- main content --}}
     <div class="main-content">
 
@@ -173,28 +71,20 @@
           <input class="form-control" type="file" name="image" placeholder="" aria-describedby="helpId">
         </div>
 
-        <div class="form-group">
-          <label for="day">Publication Date (Day):</label>
-          <input type="number" id="day" min="1" max="31">
-        </div>
-      
-        <div class="form-group">
-            <label for="month">Publication Date (Month):</label>
-            <input type="text" id="month">
-        </div>
-      
-        <div class="form-group">
-            <label for="year">Publication Date (Year):</label>
-            <input type="number" id="year" min="1900" max="2099">
-        </div>
-      
-        <button class="btn btn-primary">Upload</button>
+        <div class="date">
+          <label for="date">Enter the publication date: </label> 
+          <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+        </div> 
+
+        <button class="btn-upload">Upload</button>
       </form>
     </div>
 
     {{-- right-sidebar --}}
     <div class="right-sidebar">
-
+      <div class="pre-upload">
+        <p>Your previous uploaded researchs</p>
+      </div>
     </div>
     {{-- right-sidebar --}}
 

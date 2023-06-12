@@ -1,4 +1,4 @@
-@extends('layout.master')
+{{-- @extends('layout.master')
 
 @section('dynamic_content')
 
@@ -62,7 +62,7 @@
         </div> --}}
 
 
-        <div class="feedback">
+        {{-- <div class="feedback">
           <a href="#" class="feedback-button hover-underline">Write feedback</a>
           <div class="feedback-form">
             <form>
@@ -75,4 +75,4 @@
   </div>
 </div>
 
-@stop
+{{-- @stop --}}

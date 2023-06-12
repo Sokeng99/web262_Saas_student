@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
-// use App\Http\Controllers\studentResearchController;
+use App\Http\Controllers\studentResearchController;
+use App\Models\StudentResearch;
 
 /*
 |--------------------------------------------------------------------------
