@@ -56,9 +56,9 @@ Route::get('/scholar_pro', function () {
     return view('scholar_pro'); //scholar_pro.blade.php
 });
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard'); //scholar_pro.blade.php
-// });
+Route::get('/dashboard', function () {
+    return view('dashboard'); //scholar_pro.blade.php
+});
 
 Route::get('/home', [CustomAuthController::class, 'home']); 
 Route::get('/dashboard', [CustomAuthController::class, 'dashboard']); 

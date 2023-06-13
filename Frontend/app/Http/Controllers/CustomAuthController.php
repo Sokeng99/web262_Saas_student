@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
-use Symfony\Component\HttpFoundation\Session\Session;
+// use Symfony\Component\HttpFoundation\Session;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class CustomAuthController extends Controller
 {
@@ -65,18 +66,18 @@ class CustomAuthController extends Controller
       ]);
     }    
      
-    // public function dashboard()
-    // {
-    //     if(Auth::check()){
-    //         return view('dashboard');
-    //     }
-    //     return redirect('/login');
-    // }
+    public function dashboard()
+    {
+        if(Auth::check()){
+            return view('dashboard');
+        }
+        return redirect('/login');
+    }
      
-    // public function signOut() {
-    //     Session::flush();
-    //     Auth::logout();
+    public function signOut() {
+        Session::flush();
+        Auth::logout();
    
-    //     return redirect('login');
-    // }
+        return redirect('login');
+    }
 }
