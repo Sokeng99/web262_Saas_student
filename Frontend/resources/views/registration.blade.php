@@ -1,4 +1,4 @@
-@extends('layouts')
+{{-- @extends('layouts')
 @section('content')
 <main class="signup-form">
     <div class="cotainer">
@@ -42,4 +42,4 @@
         </div>
     </div>
 </main>
-@endsection
+@endsection --}}
