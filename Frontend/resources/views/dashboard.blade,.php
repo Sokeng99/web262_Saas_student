@@ -1,7 +1,7 @@
 
 <!-- this does not include in my project yet -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Laravel 8 Custom Auth Login and Registration</title>
@@ -34,4 +34,4 @@
     </div>
     @yield('content')
 </body>
-</html> 
+</html>  -->
