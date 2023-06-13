@@ -60,10 +60,9 @@ Route::get('/dashboard', function () {
     return view('dashboard'); //scholar_pro.blade.php
 });
 
-Route::get('/home', [CustomAuthController::class, 'home']); 
-Route::get('/dashboard', [CustomAuthController::class, 'dashboard']); 
-Route::get('/login', [CustomAuthController::class, 'index'])->name('login');
-Route::post('/postlogin', [CustomAuthController::class, 'login'])->name('postlogin'); 
-Route::get('/signup', [CustomAuthController::class, 'signup'])->name('register-user');
-Route::post('/postsignup', [CustomAuthController::class, 'signupsave'])->name('postsignup'); 
-Route::get('/signout', [CustomAuthController::class, 'signOut'])->name('signout');
+Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
+Route::get('login', [CustomAuthController::class, 'index'])->name('login');
+Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
+Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
+Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
+Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
