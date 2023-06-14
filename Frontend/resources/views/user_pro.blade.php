@@ -29,10 +29,10 @@
           <div class="p-4 text-black" style="background-color: #f8f9fa;">
             <div class="d-flex justify-content-end text-center py-0">
              
-              <div class="following">
+              {{-- <div class="following">
                 <p class="mb-1 h5">478</p>
                 <p class="small text-muted mb-0">Following</p>
-              </div>
+              </div> --}}
             </div>
           </div>
           <div class="card-body p-4 text-black user-profile">

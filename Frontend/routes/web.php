@@ -16,9 +16,6 @@ use App\Models\StudentResearch;
 |
 */
 
-Route::get('/', function () {
-    return view('index'); //index.blade.php
-});
 
 // future plan
 // Route::get('/feedback', function () {
@@ -30,15 +27,15 @@ Route::get('/', function () {
 //     return view('question'); //question.blade.php
 // });
 
-Route::get('/welcome', function () {
-    return view('welcome'); //welcome.blade.php
+Route::get('/', function () {
+    return view('index'); //index.blade.php
 });
 
 Route::get('/upload', function () {
     return view('upload'); //upload.blade.php
 });
 
-Route::post('/upload', [studentResearchController::class, 'upload']);
+// Route::post('/upload', [studentResearchController::class, 'upload']);
 
 Route::get('/template', function () {
     return view('template'); //template.blade.php
@@ -56,9 +53,6 @@ Route::get('/scholar_pro', function () {
     return view('scholar_pro'); //scholar_pro.blade.php
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard'); //scholar_pro.blade.php
-});
 
 Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
