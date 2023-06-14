@@ -45,9 +45,9 @@
     </div>
     <div class="nav-right">
       <ul>
-        <li><i class="fa-solid fa-bell" style="color: #ffffff;"></i></li>
-        <li><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></li>
-        <li><i class="fa-solid fa-comment" style="color: #ffffff;"></i></li>
+        <li><img src="assets/img/bell.png" class="logo"></li>
+        <li><img src="assets/img/mail.png" class="logo"></li>
+        <li><img src="assets/img/comment.png" class="logo"></li>
       </ul>
       <div class="nav-user-icon online">
         <img src="assets/img/anime.png">
@@ -66,6 +66,11 @@
           <input type="text" id="title">
         </div>
         
+        <div class="form-group">
+          <label for="title">Description:</label>
+          <input type="text" id="title">
+        </div>
+
         <div class="upload-file" style="margin-bottom: 10px">
           <label for="formFileMultiple" class="form-label">Upload your files here</label>
           <input class="form-control" type="file" name="image" placeholder="" aria-describedby="helpId">
@@ -81,16 +86,16 @@
     </div>
 
     {{-- right-sidebar --}}
-    <div class="right-sidebar">
-      <div class="pre-upload">
-        <p>Your previous uploaded researchs</p>
+    <div class="right-sidebar hover-underline">
+      <div class="pre-upload" style="margin-bottom: 5px; text-align:center;">
+        <i class="fa-solid fa-hand-point-right fa-beat"></i>
+        <a href="#">see your recent uploaded researches here</a>
       </div>
-    </div>
     {{-- right-sidebar --}}
 
   </div>
   {{-- content --}}
-
+  </div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">

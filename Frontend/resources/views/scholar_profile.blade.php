@@ -16,8 +16,8 @@
                 alt="Generic placeholder image" class="img-fluid img-thumbnail mt-5 mb-1"
                 style="width: 150px; z-index: 1">
               <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
-                style="z-index: 1;">
-                Follow
+                style="z-index: 1; background-color:#00032e; color:#f8f9fa;">
+                Edit
               </button>
             </div>
             <div class="ms-3" style="margin-top: 130px;">
@@ -32,14 +32,14 @@
                   <p class="mb-1 h5" style="display: block;" >253</p>
                   <p class="small text-muted mb-0">Upload</p>
                 </div>
-                <div class="px-3">
+                {{-- <div class="px-3">
                   <p class="mb-1 h5" style="display: block;">1026</p>
                   <p class="small text-muted mb-0">Followers</p>
                 </div>
                 <div>
                   <p class="mb-1 h5" style="display: block;">478</p>
                   <p class="small text-muted mb-0">Following</p>
-                </div>
+                </div> --}}
 
 
           </div>
@@ -52,8 +52,6 @@
               </thead>
               <div class="p-4" style="background-color: #f8f9fa;">
                 <p class="font-italic mb-1">I love sharing to other people</p>
-                <p class="font-italic mb-1">With so much digital content available for free, you have only a few seconds to impress a  reader or employer. Also, today’s visitors have fragile attention. 
-                  Hence, an impressive professional bio will catch the attention of the reader and hook them to your story. As they keep reading, they must desire more and finally reach your career portfolio or website for further conversation.  </p>
               </div>
             </div> 
             

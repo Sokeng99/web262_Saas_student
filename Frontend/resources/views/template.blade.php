@@ -11,15 +11,15 @@
         <h2 style="text-align: center">Discover the world's scientific knowledge</h2>
         <h3 style="text-align: center">With 135+ million publication pages, 20+ million researchers and 1+ million questions, this is where everyone can access science</h3>
         <div class="box">
+            <img src="assets/img/search.png">
             <input type="search" id="search" placeholder="Search for publications, researchers, or questions" name="search"/ >
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
       <hr>
     </div>
     <div class="caption1">
     <div class="qpub">
-      <a class="question" href="#">Questions (4,300)</a>
-      <a class="publication" href="#">Feedbacks (1,000)</a>
+      <a class="question" href="#">Research Paper (100)</a>
+      {{-- <a class="publication" href="#">Feedbacks (5)</a> --}}
     </div>
   </div>
 </div>
@@ -54,7 +54,11 @@
             <img src="assets/img/favicon.png" alt="Researcher 5">
             <p class="name">Sereiteppy Or</p>
           </div>
-          
+          <div class="download-file">
+            <p>Download pdf here</p>
+            <i class="fa-solid fa-hand-point-down fa-bounce"></i><br>
+            <a href="path/to/your/pdf.pdf" download class="download-link">Download PDF</a>
+          </div>
         </div>
 
         {{-- <div class="source">
@@ -93,7 +97,11 @@
             <img src="assets/img/favicon.png" alt="Researcher 5">
             <p class="name">Sereiteppy Or</p>
           </div>
-          
+          <div class="download-file">
+            <p>Download pdf here</p>
+            <i class="fa-solid fa-hand-point-down fa-bounce"></i><br>
+            <a href="path/to/your/pdf.pdf" download class="download-link">Download PDF</a>
+          </div>
         </div>
   </div>
 </div>
@@ -127,7 +135,11 @@
             <img src="assets/img/favicon.png" alt="Researcher 5">
             <p class="name">Sereiteppy Or</p>
           </div>
-          
+          <div class="download-file">
+            <p>Download pdf here</p>
+            <i class="fa-solid fa-hand-point-down fa-bounce"></i><br>
+            <a href="path/to/your/pdf.pdf" download class="download-link">Download PDF</a>
+          </div>
         </div>
   </div>
 </div>
@@ -161,7 +173,11 @@
             <img src="assets/img/favicon.png" alt="Researcher 5">
             <p class="name">Sereiteppy Or</p>
           </div>
-          
+          <div class="download-file">
+            <p>Download pdf here</p>
+            <i class="fa-solid fa-hand-point-down fa-bounce"></i><br>
+            <a href="path/to/your/pdf.pdf" download class="download-link">Download PDF</a>
+          </div>
         </div>
   </div>
 </div>
@@ -195,7 +211,11 @@
             <img src="assets/img/favicon.png" alt="Researcher 5">
             <p class="name">Sereiteppy Or</p>
           </div>
-          
+          <div class="download-file">
+            <p>Download pdf here</p>
+            <i class="fa-solid fa-hand-point-down fa-bounce"></i><br>
+            <a href="path/to/your/pdf.pdf" download class="download-link">Download PDF</a>
+          </div>
         </div>
   </div>
 </div>

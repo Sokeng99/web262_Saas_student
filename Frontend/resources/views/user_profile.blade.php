@@ -39,13 +39,11 @@
             <div class="mb-5">
               <thead>
                   <tr>
-                      <th colspan="2"><b>BIO</b></th>
+                      <th colspan="2"><b>Brief Bio</b></th>
                   </tr>
               </thead>
               <div class="p-4" style="background-color: #f8f9fa;">
                 <p class="font-italic mb-1">I love sharing to other people</p>
-                <p class="font-italic mb-1">With so much digital content available for free, you have only a few seconds to impress a  reader or employer. Also, today’s visitors have fragile attention. 
-                  Hence, an impressive professional bio will catch the attention of the reader and hook them to your story. As they keep reading, they must desire more and finally reach your career portfolio or website for further conversation.  </p>
               </div>
             </div> 
             

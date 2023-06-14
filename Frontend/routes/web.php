@@ -41,18 +41,25 @@ Route::get('/template', function () {
     return view('template'); //template.blade.php
 });
 
-Route::get('/edit', function () {
-    return view('edit'); //edit.blade.php
+Route::get('/edit-scholar-profile', function () {
+    return view('edit-scholar-profile'); //edit-scholar-profile.blade.php
 });
 
-Route::get('/user_pro', function () {
-    return view('user_pro'); //user_pro.blade.php
+Route::get('/edit-student-profile', function () {
+    return view('edit-student-profile'); //edit-student-profile.blade.php
 });
 
-Route::get('/scholar_pro', function () {
-    return view('scholar_pro'); //scholar_pro.blade.php
+Route::get('/user_profile', function () {
+    return view('user_profile'); //user_profile.blade.php
 });
 
+Route::get('/scholar_profile', function () {
+    return view('scholar_profile'); //scholar_profile.blade.php
+});
+
+Route::get('/login-option', function () {
+    return view('login-option'); //login-option.blade.php
+});
 
 Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');

@@ -2,6 +2,9 @@
 
 @section('dynamic_content')
 
+<div class="nav-empty" style="padding: 50px">
+</div>
+
 <div class="container my-5 login-option-page">
     <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">
@@ -12,11 +15,11 @@
                         <a class="btn btn-primary" href="/login/student">
                             Login for student
                         </a>
-                        <!-- Button for user signup -->
+                        <!-- Button for student signup -->
                         <a class="btn btn-primary" href="/login/scholar">
                             Login for scholar
                         </a>
-                        <!-- Button for company signup -->
+                        <!-- Button for scholar signup -->
                     </div>
                 </div>
             </div>
