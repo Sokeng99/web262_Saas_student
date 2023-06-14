@@ -8,10 +8,14 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    @include('layout.navigation')
+  <header id="header">
+    @include('layout.navigation_two')
   </header><!-- End Header -->
   <!-- End Header -->
+
+    <!-- Block dynamic -->
+    @yield('dynamic_content')
+    <!-- End Block dynamic -->
 
 </body>
 

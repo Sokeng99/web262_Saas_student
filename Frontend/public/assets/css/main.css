@@ -1347,7 +1347,7 @@ body {
 } */
 
 /* nav upload */
-nav{
+nav.nav-upload{
   display: flex;
   align-items: center;
   justify-content: space-between;

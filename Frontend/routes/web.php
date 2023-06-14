@@ -37,8 +37,8 @@ Route::get('/upload', function () {
 
 // Route::post('/upload', [studentResearchController::class, 'upload']);
 
-Route::get('/template', function () {
-    return view('template'); //template.blade.php
+Route::get('/template-results', function () {
+    return view('template-results'); //template-results.blade.php
 });
 
 Route::get('/edit-scholar-profile', function () {
@@ -49,8 +49,8 @@ Route::get('/edit-student-profile', function () {
     return view('edit-student-profile'); //edit-student-profile.blade.php
 });
 
-Route::get('/user_profile', function () {
-    return view('user_profile'); //user_profile.blade.php
+Route::get('/student_profile', function () {
+    return view('student_profile'); //student_profile.blade.php
 });
 
 Route::get('/scholar_profile', function () {
