@@ -17,7 +17,6 @@ class CreateResearchPaperTable extends Migration
             $table->id('research_paper_id');
             $table->unsignedBigInteger('scholar_user_id');
             $table->unsignedBigInteger('category_id');
-            $table->text('keyword');
             $table->text('description');
             $table->text('website')->nullable();
             $table->text('pdf_url');

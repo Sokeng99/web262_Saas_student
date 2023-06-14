@@ -26,7 +26,6 @@ class CreateAdminUserTable extends Migration
             $table->tinyInteger('status')->default(3);
             // Access level used to define admin access level
             $table->tinyInteger('access_level')->default(0);
-            $table->text('pdf_url')->nullable();
             $table->boolean('find_user')->default(false);
             $table->boolean('add_category')->default(false);
             $table->boolean('ban_access')->default(false);

@@ -14,8 +14,29 @@ class CreateResearchPaperTable extends Migration
     public function up()
     {
         Schema::create('research_paper', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id('company_id');
+            $table->unsignedBigInteger('company_user_id');
+            $table->unsignedBigInteger('category_id');
+            $table->text('name');
+            $table->text('street');
+            $table->text('city');
+            $table->text('district');
+            $table->text('commune');
+            $table->text('village');
+            $table->text('logo')->nullable();
+            $table->text('email');
+            $table->text('website')->nullable();
+            $table->text('description');
+            $table->boolean('is_banned')->default(false);
+            $table->unsignedBigInteger('ban_by_admin_id')->nullable();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
+
+            //* if company_user_id is deleted, delete the companies that belong to that company_user_id as well
+            // $table->foreign('company_user_id')->references('company_user_id')->on('company_user')->onDelete('cascade');
+
+            // $table->foreign('category_id')->references('category_id')->on('category');
+            // $table->foreign('ban_by_admin_id')->references('admin_id')->on('admin_user');
         });
     }
 
