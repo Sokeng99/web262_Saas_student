@@ -1,10 +1,4 @@
-@extends('layout.master_three')
-
-@section('dynamic_content')
-
-<div class="nav-empty" style="padding: 50px">
-</div>
-
+  
 <div class="container my-5 login-option-page">
     <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">

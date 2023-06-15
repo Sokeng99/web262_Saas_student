@@ -23,6 +23,7 @@ class CreateStudentUserTable extends Migration
             $table->text('work');
             $table->text('education');
             $table->text('experience');
+            
             // Role used to define user type
             // 1 = Student User
             // 2 = Scholar User
