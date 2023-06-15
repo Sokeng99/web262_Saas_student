@@ -14,8 +14,14 @@ class CreateUploadTable extends Migration
     public function up()
     {
         Schema::create('upload', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id('upload_id');
+            $table->unsignedBigInteger('scholar_user_id');
+            $table->unsignedBigInteger('research_paper_id');
+            $table->date('publish_date');
+            $table->text('description');
+            $table->text('title');
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 

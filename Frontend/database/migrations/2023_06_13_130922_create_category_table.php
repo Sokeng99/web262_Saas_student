@@ -17,7 +17,7 @@ class CreateCategoryTable extends Migration
             $table->id('category_id');
             // default super admin id start from 1 meaning that if the category is added by database it's added by super admin
             $table->unsignedBigInteger('add_by_admin_id')->default(1);
-            $table->text('name');
+            $table->text('username');
             $table->text('pdf_url')->nullable();
             $table->unsignedBigInteger('edit_by_admin_id')->nullable();
             $table->timestamp('created_at')->useCurrent();
