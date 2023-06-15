@@ -48,6 +48,12 @@ class LoginController extends Controller
                 // logout from scholarUser guard if studentUser is logged in
                 Auth::guard('studentUser')->logout();
 
+
+
+                // chagne from here
+
+
+
                 return redirect()->route('user.company.name.id.profile', [
                     'name' => Auth::guard('companyUser')->user()->name,
                     'id' => Auth::guard('companyUser')->user()->company_user_id

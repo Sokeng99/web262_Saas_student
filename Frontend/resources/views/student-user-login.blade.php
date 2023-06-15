@@ -7,7 +7,7 @@
             <div class="col-md-6 col-lg-5">
                 <div class="card shadow">
                     <div class="card-body">
-                        <h5 class="card-title text-center mb-4">Login for user</h5> <!-- Card title -->
+                        <h5 class="card-title text-center mb-4">Login for student user</h5> <!-- Card title -->
                         <form action="{{ route('logging-in.user') }}" method="POST">
                             <!-- Start of the form -->
                             @csrf
