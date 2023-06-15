@@ -1,6 +1,7 @@
-{{-- @extends('dashboard')
+@extends('layout.master_three')
 
-@section('content')
+@section('dynamic_content')
+
 <main class="login-form">
     <div class="cotainer">
         <div class="row justify-content-center">
@@ -40,4 +41,5 @@
         </div>
     </div>
 </main>
-@endsection --}}
+
+@stop

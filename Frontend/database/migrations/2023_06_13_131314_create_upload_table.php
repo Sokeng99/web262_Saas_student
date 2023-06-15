@@ -16,7 +16,6 @@ class CreateUploadTable extends Migration
         Schema::create('upload', function (Blueprint $table) {
             $table->id('upload_id');
             $table->unsignedBigInteger('scholar_user_id');
-            $table->unsignedBigInteger('research_paper_id');
             $table->date('publish_date');
             $table->text('description');
             $table->text('title');

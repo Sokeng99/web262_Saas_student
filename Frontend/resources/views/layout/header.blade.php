@@ -27,3 +27,6 @@
 
   <!-- Font Awesome Tool Kit -->
   <script src="https://kit.fontawesome.com/b2093c8d10.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrape -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">

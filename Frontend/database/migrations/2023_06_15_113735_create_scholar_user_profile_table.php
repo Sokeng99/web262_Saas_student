@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateResearchPaperTable extends Migration
+class CreateScholarUserProfileTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,19 @@ class CreateResearchPaperTable extends Migration
      */
     public function up()
     {
-        Schema::create('research_paper', function (Blueprint $table) {
-            $table->id('research_paper_id');
-            $table->unsignedBigInteger('scholar_user_id');
-            $table->text('description');
-            $table->text('website')->nullable();
-            $table->text('pdf_url');
+        Schema::create('scholar_user_profile', function (Blueprint $table) {
+            $table->id('scholar_user_profile_id');
+            $table->text('scholar_user_id');
+            $table->text('bio');
+            $table->text('work');
+            $table->text('education');
+            $table->text('experience');
+            
+            // Role used to define user type
+            // 1 = Student User
+            // 2 = Scholar User
+
+            $table->tinyInteger('status')->default(2);
             $table->boolean('is_banned')->default(false);
             // $table->unsignedBigInteger('ban_by_admin_id')->nullable();
             $table->timestamp('created_at')->useCurrent();
@@ -33,6 +40,6 @@ class CreateResearchPaperTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('research_paper');
+        Schema::dropIfExists('scholar_user_profile');
     }
 }

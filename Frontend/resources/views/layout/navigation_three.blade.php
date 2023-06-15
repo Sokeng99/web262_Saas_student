@@ -8,7 +8,7 @@
 <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 <nav id="navbar" class="navbar">
     <ul>
-    <li><a href="">Home</a></li>
+    <li><a href="/">Home</a></li>
     </ul>
 </nav><!-- .navbar -->
 

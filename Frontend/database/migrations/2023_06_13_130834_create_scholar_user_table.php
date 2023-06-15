@@ -18,17 +18,13 @@ class CreateScholarUserTable extends Migration
             $table->text('username');
             $table->text('email');
             $table->text('password');
-            $table->text('bio');
-            $table->text('work');
-            $table->text('education');
-            $table->text('experience');
+
             // Role used to define user type
             // 1 = Student User
             // 2 = Scholar User
-            // 3 = Admin
             $table->tinyInteger('status')->default(2);
             $table->boolean('is_banned')->default(false);
-            $table->unsignedBigInteger('ban_by_admin_id')->nullable();
+            // $table->unsignedBigInteger('ban_by_admin_id')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });

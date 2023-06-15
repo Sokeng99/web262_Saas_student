@@ -1,9 +1,7 @@
-@extends('layout.master')
+@extends('layout.master_two')
 
 @section('dynamic_content')
 
-<div class="nav-empty" style="padding: 50px">
-</div>
 
 <section class="h-100 gradient-custom-2">
   <div class="container py-13 h-100">

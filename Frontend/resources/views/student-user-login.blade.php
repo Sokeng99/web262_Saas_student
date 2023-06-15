@@ -1,6 +1,6 @@
-{{-- @extends('layout.mastertwo')
+@extends('layout.master_three')
 
-@section('dyncontent')
+@section('dynamic_content')
 
     <div class="container my-5 custom-login-form">
         <div class="row justify-content-center">
@@ -43,4 +43,4 @@
     </div>
 
 
-@stop --}}
+@stop
