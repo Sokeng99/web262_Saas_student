@@ -16,7 +16,6 @@ class CreateResearchPaperTable extends Migration
         Schema::create('research_paper', function (Blueprint $table) {
             $table->id('research_paper_id');
             $table->unsignedBigInteger('scholar_user_id');
-            $table->unsignedBigInteger('category_id');
             $table->text('description');
             $table->text('website')->nullable();
             $table->text('pdf_url');

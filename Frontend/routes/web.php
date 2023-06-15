@@ -1,7 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+
 use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\ScholarUserController;
+use App\Http\Controllers\StudentUserController;
+
 use App\Http\Controllers\studentResearchController;
 use App\Models\StudentResearch;
 
@@ -67,3 +72,5 @@ Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name(
 Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
 Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
 Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
+
+Route::get('/login', [StudentUserController::class, 'index'])->name('login');
