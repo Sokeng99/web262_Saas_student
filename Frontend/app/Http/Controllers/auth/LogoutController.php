@@ -9,15 +9,15 @@ use Illuminate\Support\Facades\Auth;
 
 class LogoutController extends Controller
 {
-    // public function logCompanyUserOut()
-    // {
-    //     Auth::guard('companyUser')->logout();
-    //     return redirect()->route('home');
-    // }
+    public function logScholarUserOut()
+    {
+        Auth::guard('scholarUser')->logout();
+        return redirect()->route('index');
+    }
 
-    // public function logNormalUserOut()
-    // {
-    //     Auth::guard('normalUser')->logout();
-    //     return redirect()->route('home');
-    // }
+    public function logStudentUserOut()
+    {
+        Auth::guard('studentUser')->logout();
+        return redirect()->route('index');
+    }
 }
