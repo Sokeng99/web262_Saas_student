@@ -6,28 +6,29 @@ use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ScholarUser extends Model
+class ScholarUserProfile extends Model
 {
     use HasFactory;
     use \Illuminate\Auth\Authenticatable;
 
-    protected $table = 'scholar_user';
+    protected $table = 'scholar_user_profile';
 
-    protected $primaryKey = 'scholar_user_id';
+    protected $primaryKey = 'scholar_user_profile_id';
 
     protected $guard = 'scholarUser';
 
     protected $fillable = [
-        'name',
-        'email',
-        'password',
-        
+        'scholar_user_id',
+        'bio',
+        'work',
+        'education',
+        'experience',
+        'profile_url'
     ];
 
     protected $hidden = [
         'created_at',
         'updated_at',
-        'password',
         'is_banned',
         'ban_by_admin_id',
     ];
@@ -37,10 +38,5 @@ class ScholarUser extends Model
     public function getStatusAttribute($value)
     {
         return $value == 2 ? 'scholarUser' : null;
-    }
-
-    public function researchPapers()
-    {
-        return $this->hasMany(ResearchPaper::class, 'scholar_user_id');
     }
 }

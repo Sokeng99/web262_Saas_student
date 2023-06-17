@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\auth\LoginController;
+use App\Http\Controllers\auth\LogoutController;
+use App\Http\Controllers\auth\RegisterController;
 use Illuminate\Support\Facades\Route;
-
 
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\ScholarUserController;
@@ -74,12 +76,6 @@ use App\Models\StudentResearch;
 Route::controller(WebsiteController::class)->group(function() {
 
     Route::get('/', 'index')->name('index');
-
-    Route::get('/category', 'categories')->name('category');
-
-    route::get('/category/{categoryName}', 'categoryShowResearchPaper')->name('category.categoryName');
-
-    route::get('/category/{categoryName}/{ResearchPaperName}', 'ResearchPaperDetail')->name('category.categoryName.researchpaperName');
 
     route::get('/search' , 'search')->name('search');
 

@@ -2,32 +2,29 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ScholarUser extends Model
+class StudentUserProfile extends Model
 {
     use HasFactory;
     use \Illuminate\Auth\Authenticatable;
 
-    protected $table = 'scholar_user';
+    protected $table = 'student_user_profile';
 
-    protected $primaryKey = 'scholar_user_id';
+    protected $primaryKey = 'student_user_id';
 
-    protected $guard = 'scholarUser';
+    protected $guard = 'studentUser';
 
     protected $fillable = [
-        'name',
-        'email',
-        'password',
-        
+        'bio',
+        'student_user_id',
+        'profile_url',
     ];
 
     protected $hidden = [
         'created_at',
         'updated_at',
-        'password',
         'is_banned',
         'ban_by_admin_id',
     ];
@@ -36,11 +33,6 @@ class ScholarUser extends Model
     // Will be used to check if the user is a student user or a scholar user
     public function getStatusAttribute($value)
     {
-        return $value == 2 ? 'scholarUser' : null;
-    }
-
-    public function researchPapers()
-    {
-        return $this->hasMany(ResearchPaper::class, 'scholar_user_id');
+        return $value == 1 ? 'studentUser' : null;
     }
 }

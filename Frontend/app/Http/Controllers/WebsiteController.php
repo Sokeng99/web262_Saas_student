@@ -2,7 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Download;
+use App\Models\ResearchPaper;
+use App\Models\ScholarUser;
+use App\Models\ScholarUserProfile;
+use App\Models\StudentUser;
+use App\Models\StudentUserProfile;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class WebsiteController extends Controller
 {
@@ -63,7 +74,7 @@ class WebsiteController extends Controller
         ]);
     }
 
-    public function saveCompany(Request $request, $categoryName, $companyName)
+    public function downloadResearchPaper(Request $request, $categoryName, $companyName)
     {
         if (!Auth::guard('normalUser')->check()) {
             return redirect()->back()->with('error', 'You must login as a normal user to save company');

@@ -30,10 +30,6 @@
                             </button>
                           </div>
                         </div>
-                        {{-- <div class="text-center text-sm-right">
-                          <span class="badge badge-secondary">administrator</span>
-                          <div class="text-muted"><small>Joined 09 Dec 2017</small></div>
-                        </div> --}}
                       </div>
                     </div>
                   
@@ -64,37 +60,14 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="row">
-                                <div class="col">
-                                  <div class="form-group">
-                                    <label>Work</label>
-                                    <input class="form-control" type="text" placeholder="Work Experience">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col">
-                                  <div class="form-group">
-                                    <label>Education</label>
-                                    <input class="form-control" type="text" placeholder="Education Details">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col">
-                                  <div class="form-group">
-                                    <label>Experience/Skills</label>
-                                    <textarea class="form-control" rows="5" placeholder="Experience and Skills"></textarea>
-                                  </div>
-                                </div>
-                              </div>
                             </div>
-                          </div>
-                          <div class="row">
-                            <div class="col d-flex justify-content-end">
-                              <button class="btn btn-primary" type="submit">Save Changes</button>
-                            </div>
-                          </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-end">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </div>
                         </form>
       
                       </div>
@@ -113,5 +86,4 @@
 
   
 </section>
-
 @stop

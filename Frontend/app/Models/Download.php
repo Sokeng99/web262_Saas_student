@@ -13,8 +13,8 @@ class Download extends Model
     protected $primaryKey = 'download_id';
 
     protected $fillable = [
-        'name',
-        'logo_url',
+        'student_user_id',
+        'research_paper_id'
     ];
 
     protected $hidden = [

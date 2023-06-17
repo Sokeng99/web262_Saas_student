@@ -15,7 +15,7 @@
           <button type="submit" class="btn btn-primary">Search</button>
         </form>
 
-        <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+        {{-- <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
 
           <div class="col-lg-3 col-6">
             <div class="stats-item text-center w-100 h-100">
@@ -45,7 +45,7 @@
             </div>
           </div><!-- End Stats Item -->
 
-        </div>
+        </div> --}}
       </div>
 
       <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">

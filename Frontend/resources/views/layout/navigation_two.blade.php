@@ -3,6 +3,8 @@
       <img src="assets/img/logo1.png" class="logo">
       <a href="/">Home</a></li>
     </div>
+
+    {{-- search bar --}}
     <div class="nav-right">
       <div class="search-box">
         <img src="assets/img/search.png">
@@ -15,6 +17,22 @@
       </ul> --}}
       <div class="nav-user-icon online">
         <img src="assets/img/anime.png">
+        <div class="dropdown-menu" id="user-menu">
+          <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 </nav>
+
+{{-- script --}}
+<script>
+  var userIcon = document.getElementById('user-icon');
+  var userMenu = document.getElementById('user-menu');
+
+  userIcon.addEventListener('click', function() {
+    userMenu.classList.toggle('show');
+  });
+</script>

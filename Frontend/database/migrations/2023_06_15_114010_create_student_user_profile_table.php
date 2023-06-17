@@ -22,6 +22,7 @@ class CreateStudentUserProfileTable extends Migration
             // 2 = Scholar User
 
             $table->tinyInteger('status')->default(1);
+            $table->text('profile_url')->nullable();
             $table->boolean('is_banned')->default(false);
             $table->unsignedBigInteger('ban_by_admin_id')->nullable();
             $table->timestamp('created_at')->useCurrent();

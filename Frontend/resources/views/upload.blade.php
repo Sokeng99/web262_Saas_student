@@ -14,13 +14,18 @@
         </div>
         
         <div class="form-group">
-          <label for="title">Description:</label>
-          <input type="text" id="title">
+          <label for="description">Description:</label>
+          <input type="text" id="description">
+        </div>
+
+        <div class="form-group">
+          <label for="website">Website:</label>
+          <input type="text" id="website">
         </div>
 
         <div class="upload-file" style="margin-bottom: 10px">
           <label for="formFileMultiple" class="form-label">Upload your files here</label>
-          <input class="form-control" type="file" name="image" placeholder="" aria-describedby="helpId">
+          <input class="form-control" type="file" name="image" placeholder="Upload your pdf here" aria-describedby="helpId">
         </div>
 
         <div class="date">

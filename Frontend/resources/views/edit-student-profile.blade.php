@@ -53,14 +53,6 @@
                                 </div>
                               </div>
                               <div class="row">
-                                <div class="col">
-                                  <div class="form-group" style="text-align: left">
-                                    <label>Email</label>
-                                    <input class="form-control" type="text" placeholder="user@example.com">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
                                 <div class="col mb-3">
                                   <div class="form-group" style="text-align: left">
                                     <label>About</label>
@@ -68,35 +60,6 @@
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-sm-6 mb-3">
-                            <div class="mb-2" style="text-align: left;">Change Password</div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <label>Current Password</label>
-                                            <input class="form-control" type="password" placeholder="••••••">
-                                        </div>
-                                    </div>
-                                </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label>New Password</label>
-                                        <input class="form-control" type="password" placeholder="••••••">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label>Confirm <span class="d-none d-xl-inline">Password</span></label>
-                                        <input class="form-control" type="password" placeholder="••••••">
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

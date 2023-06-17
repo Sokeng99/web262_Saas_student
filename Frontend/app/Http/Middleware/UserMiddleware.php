@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Auth;
 
 class UserMiddleware
 {
+    protected $guard;
+    protected $currentUserId;
+    
     protected function __construct()
     {
         // dd(Auth::guard('studentUser')->check(), Auth::guard('scholarUser')->check());
