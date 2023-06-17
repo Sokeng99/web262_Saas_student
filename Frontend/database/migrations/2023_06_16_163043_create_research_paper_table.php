@@ -16,11 +16,13 @@ class CreateResearchPaperTable extends Migration
         Schema::create('research_paper', function (Blueprint $table) {
             $table->id('research_paper_id');
             $table->unsignedBigInteger('scholar_user_id');
-            $table->text('description');
-            $table->text('website')->nullable();
-            $table->text('pdf_url');
+            $table->string('title');
+            $table->string('description');
+            $table->string('website')->nullable();
+            $table->string('pdf_url');
+            $table->date('publish_date');
             $table->boolean('is_banned')->default(false);
-            // $table->unsignedBigInteger('ban_by_admin_id')->nullable();
+            $table->unsignedBigInteger('ban_by_admin_id')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });

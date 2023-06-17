@@ -15,16 +15,16 @@ class CreateScholarUserTable extends Migration
     {
         Schema::create('scholar_user', function (Blueprint $table) {
             $table->id('scholar_user_id');
-            $table->text('name');
-            $table->text('email');
-            $table->text('password');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
 
             // Role used to define user type
             // 1 = Student User
             // 2 = Scholar User
             $table->tinyInteger('status')->default(2);
             $table->boolean('is_banned')->default(false);
-            // $table->unsignedBigInteger('ban_by_admin_id')->nullable();
+            $table->unsignedBigInteger('ban_by_admin_id')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });

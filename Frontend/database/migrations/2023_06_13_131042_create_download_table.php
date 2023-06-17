@@ -15,7 +15,8 @@ class CreateDownloadTable extends Migration
     {
         Schema::create('download', function (Blueprint $table) {
             $table->id('download_id');
-            // $table->text('username');
+            $table->string('scholar_user_id')->nullable();
+            $table->string('student_user_id')->nullable();
             $table->unsignedBigInteger('research_paper_id');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();

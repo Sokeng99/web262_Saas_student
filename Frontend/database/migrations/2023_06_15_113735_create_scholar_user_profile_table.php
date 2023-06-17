@@ -27,7 +27,7 @@ class CreateScholarUserProfileTable extends Migration
 
             $table->tinyInteger('status')->default(2);
             $table->boolean('is_banned')->default(false);
-            // $table->unsignedBigInteger('ban_by_admin_id')->nullable();
+            $table->unsignedBigInteger('ban_by_admin_id')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });

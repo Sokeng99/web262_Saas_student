@@ -55,7 +55,7 @@ class LoginController extends Controller
             }
 
         } else {
-            return redirect()->back()->withErrors(['error' => 'Does not match with credentials in database']);
+            return redirect()->back()->withErrors(['error' => 'Does not match with credentials in our databases']);
         }
     }
 
@@ -89,7 +89,7 @@ class LoginController extends Controller
                 ])->with('success', 'You are Login');
             }
         } else {
-            return redirect()->back()->withErrors(['error' => 'Does not match with credentials in database']);
+            return redirect()->back()->withErrors(['error' => 'Does not match with credentials in our databases']);
         }
     }
 }
