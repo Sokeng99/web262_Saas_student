@@ -137,20 +137,4 @@ class StudentUserController extends Controller
         }
     }
 
-    public function removeSavedCompany(Request $request, $username, $userId)
-    {
-        $company_id = $request->query('company_id');
-
-        if ($company_id) {
-            // we check by user_id and company_id because we prevent other user to delete other user's saved company.
-            $removeSavedCompany = SavedCompany::where([
-                'normal_user_id' => $userId,
-                'company_id' => $company_id,
-            ])->delete();
-
-            return redirect()->back()->with('success', 'Company has been removed from your saved company list');
-        } else {
-            return redirect()->back()->with('error', 'Remove saved company failed');
-        }
-    }
 }

@@ -30,10 +30,6 @@
                             </button>
                           </div>
                         </div>
-                        {{-- <div class="text-center text-sm-right">
-                          <span class="badge badge-secondary">administrator</span>
-                          <div class="text-muted"><small>Joined 09 Dec 2017</small></div>
-                        </div> --}}
                       </div>
                     </div>
                   

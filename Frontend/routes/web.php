@@ -35,40 +35,47 @@ use App\Models\StudentResearch;
 //     return view('question'); //question.blade.php
 // });
 
-// Route::get('/', function () {
-//     return view('index'); //index.blade.php
-// });
+Route::get('/', function () {
+    return view('index'); //index.blade.php
+});
 
-// Route::get('/upload', function () {
-//     return view('upload'); //upload.blade.php
-// });
+Route::get('/upload', function () {
+    return view('upload'); //upload.blade.php
+});
 
-// // Route::post('/upload', [studentResearchController::class, 'upload']);
+// Route::post('/upload', [studentResearchController::class, 'upload']);
 
-// Route::get('/template-results', function () {
-//     return view('template-results'); //template-results.blade.php
-// });
+Route::get('/template-results', function () {
+    return view('template-results'); //template-results.blade.php
+});
 
-// Route::get('/edit-scholar-profile', function () {
-//     return view('edit-scholar-profile'); //edit-scholar-profile.blade.php
-// });
+Route::get('/edit-scholar-profile', function () {
+    return view('edit-scholar-profile'); //edit-scholar-profile.blade.php
+});
 
-// Route::get('/edit-student-profile', function () {
-//     return view('edit-student-profile'); //edit-student-profile.blade.php
-// });
+Route::get('/edit-student-profile', function () {
+    return view('edit-student-profile'); //edit-student-profile.blade.php
+});
 
-// Route::get('/student_profile', function () {
-//     return view('student_profile'); //student_profile.blade.php
-// });
+Route::get('/student_profile', function () {
+    return view('student_profile'); //student_profile.blade.php
+});
 
-// Route::get('/scholar_profile', function () {
-//     return view('scholar_profile'); //scholar_profile.blade.php
-// });
+Route::get('/scholar_profile', function () {
+    return view('scholar_profile'); //scholar_profile.blade.php
+});
 
-// Route::get('/login-option', function () {
-//     return view('login-option'); //login-option.blade.php
-// });
+Route::get('/login-option', function () {
+    return view('login-option'); //login-option.blade.php
+});
 
+Route::get('/create-student-profile', function () {
+    return view('create-student-profile'); //create-student-profile.blade.php
+});
+
+Route::get('/create-scholar-profile', function () {
+    return view('create-scholar-profile'); //create-scholar-profile.blade.php
+});
 
 //* End Route without controller ------------------------------------------------------------------
 
