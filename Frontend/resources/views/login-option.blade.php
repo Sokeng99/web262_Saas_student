@@ -2,6 +2,9 @@
 
 @section('dynamic_content')
 
+<div class="nav-empty" style="padding: 55px">
+</div>
+
 <div class="container my-5 login-option-page">
     <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">

@@ -2,13 +2,16 @@
 
 @section('dynamic_content')
 
+<div class="nav-empty" style="padding: 55px">
+</div>
+
     <div class="container my-5 custom-login-form">
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-5">
                 <div class="card shadow">
                     <div class="card-body">
                         <h5 class="card-title text-center mb-4">Login for student user</h5> <!-- Card title -->
-                        <form action="{{ route('logging-in.user') }}" method="POST">
+                        <form action="{{ route('logging-in.student') }}" method="POST">
                             <!-- Start of the form -->
                             @csrf
                             <div class="mb-3">
@@ -33,7 +36,7 @@
                                 </div>
                             @endif
                             <div class="d-grid gap-2 mb-3">
-                                <button class="btn btn-primary" type="submit">Login</button>
+                                <button type="submit" class="btn btn-dark btn-block">Login</button>
                             </div>
                         </form> <!-- End of the form -->
                     </div>
@@ -41,6 +44,5 @@
             </div>
         </div>
     </div>
-
 
 @stop

@@ -23,7 +23,8 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link   rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+  <link   rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
   <!-- Font Awesome Tool Kit -->
   <script src="https://kit.fontawesome.com/b2093c8d10.js" crossorigin="anonymous"></script>

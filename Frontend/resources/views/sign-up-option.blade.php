@@ -2,10 +2,7 @@
 
 @section('dynamic_content')
 
-<div class="nav-empty" style="padding: 50px">
-</div>
-
-<div class="nav-empty" style="padding: 50px">
+<div class="nav-empty" style="padding: 55px">
 </div>
 
     <div class="container my-5 login-option-page">
