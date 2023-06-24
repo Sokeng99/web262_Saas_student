@@ -27,9 +27,9 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="/" class="brand-logo">
-                <!-- <img class="logo-abbr" src="assets/images/logo-white-2.png" alt=""> -->
-                <img class="logo-compact" src="assets/images/logo-text-white1.png" alt="">
+            <a href="/home" class="brand-logo">
+                 {{-- <img class="logo-abbr" src="assets/images/favicon.png" alt=""> --}}
+                {{-- <img class="logo-compact" src="assets/images/logo-text-white1.png" alt=""> --}}
                 <img class="brand-title" src="assets/images/logo-text-white1.png" alt=""> 
             </a>
 
@@ -74,37 +74,6 @@
         Main wrapper end
     ***********************************-->
 
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <!-- Required vendors -->
-    <script src="assets/vendor/global/global.min.js"></script>
-	<script src="assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-	<script src="assets/js/custom.min.js"></script>
-    <script src="assets/js/dlabnav-init.js"></script>
-    <!-- Datatable -->
-    <script src="assets/vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="assets/js/plugins-init/datatables.init.js"></script>
-     <!-- Svganimation scripts -->
-    <script src="vendor/svganimation/vivus.min.js"></script>
-    <script src="vendor/svganimation/svg.animation.js"></script>
-    <script src="js/styleSwitcher.js"></script>
-
-    <!-- Chart Morris plugin files -->
-    <script src="assets/vendor/raphael/raphael.min.js"></script>
-    <script src="assets/vendor/morris/morris.min.js"></script>
-		
-	
-	<!-- Chart piety plugin files -->
-    <script src="assets/vendor/peity/jquery.peity.min.js"></script>
-	
-	<!-- Demo scripts -->
-    <script src="assets/js/dashboard/dashboard-2.js"></script>
-	
-	<!-- Svganimation scripts -->
-    <script src="assets/vendor/svganimation/vivus.min.js"></script>
-    <script src="assets/vendor/svganimation/svg.animation.js"></script>
-    <script src="assets/js/styleSwitcher.js"></script>
-	
+    
 </body>
 </html>

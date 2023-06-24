@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Postcontroller;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\Pagescontroller;
+use App\Http\Controllers\ScholarController;
+use App\Http\Controllers\CustomAuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,59 +16,33 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Homepage 
+Route::get('/home', [Pagescontroller::class,'homepage'])->middleware('isLoggedIn');
+Route::get('/about-student', [Pagescontroller::class,'aboutstudent']);
 
-Route::get('/', function () {
-    return view('index-2');
-});
-Route::get('/about-student', function () {
-    return view('about-student');
-});
+// profile 
+Route::get('/app-profile', [Pagescontroller::class,'appprofile'])->middleware('isLoggedIn');
 
-// add routes
-Route::get('/add-library', function () {
-    return view('add-library');
-});
-Route::get('/add-scholar', function () {
-    return view('add-scholar');
-});
-Route::get('/add-student', function () {
-    return view('add-student');
-});
+// login /register
+Route::get('/login',[CustomAuthController::class,'login'])->middleware('alreadyLoggedIn');
+Route::get('/registration',[CustomAuthController::class,'registration']);
+Route::post('/register-admin',[CustomAuthController::class,'registerAdmin'])->name('register-admin');
+Route::post('/login-admin',[CustomAuthController::class,'loginAdmin'])->name('login-admin');
+Route::get('/logout',[CustomAuthController::class,'logout']);
+Route::get('/',[CustomAuthController::class,'login'])->middleware('alreadyLoggedIn');
 
-// all routes
-Route::get('/all-library', function () {
-    return view('all-library');
-});
-Route::get('/all-scholars', function () {
-    return view('all-scholars');
-});
-Route::get('/all-students', function () {
-    return view('all-students');
-});
+// ban and unban route 
+Route::get('/all-users', [UserController::class, 'users'])->middleware('isLoggedIn');
+Route::get('/ban', [UserController::class, 'banUser'])->middleware('isLoggedIn');
+// ban and unban 
+Route::post('/banUpdate', [UserController::class, 'updateBanUser'])->middleware('isLoggedIn');
+Route::post('/unban', [UserController::class, 'unbanUser']);
+
+// ban and unban route for scholar
+Route::get('/all-scholars', [ScholarController::class, 'scholars'])->middleware('isLoggedIn');
+Route::get('/banScholar', [ScholarController::class, 'banScholar'])->middleware('isLoggedIn');
+// ban and unban 
+Route::post('/banUpdateScholar', [ScholarController::class, 'updateBanscholar']);
+Route::post('/unbanScholar', [ScholarController::class, 'unbanScholar']);
 
 
-Route::get('/app-profile', function () {
-    return view('app-profile');
-});
-
-//edit routes
-Route::get('/edit-library', function () {
-    return view('edit-library');
-});
-Route::get('/edit-scholar', function () {
-    return view('edit-scholar');
-});
-Route::get('/edit-student', function () {
-    return view('edit-student');
-});
-
-//register routes
-Route::get('/page-login', function () {
-    return view('page-login');
-});
-Route::get('/page-register', function () {
-    return view('page-register');
-});
-Route::get('/scholar-profile', function () {
-    return view('scholar-profile');
-});
